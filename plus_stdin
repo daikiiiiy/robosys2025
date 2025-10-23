@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Daiki Okamoto
+# SPDX-License-Identifier: GPL-3.0-only
+
 import sys
 
 ans = 0
