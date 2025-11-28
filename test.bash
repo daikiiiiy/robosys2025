@@ -10,8 +10,14 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(./ unit 160 -u cm)
+[ "${out}" = "1.6 m" ] || ng "$LINENO"
+
+out=$(./ unit 700 -u g)
+[ "${out}" = "0.7 kg" ] || ng "$LINENO"
+
+out=$(./ unit 20 -u c)
+[ "${out}" = "68.0 F" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res

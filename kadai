@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+#SPDX-FileCopyrightText: 2025 Daiki Okamoto
+#SPDX-License-Identifier: BSD-3-Clause
+
+import argparse
+import sys
+
+def convert(value, unit):
+    if unit == "cm":
+        return f"{value / 100} m"
+    elif unit =="g":
+        return f"{value / 1000} kg"
+    elif unit =="c":
+        return f"{(value * 9/5) + 32} °F"
+    else:
+        return "nothing"
+
+def main():
+    parser = argparse.ArgumentParser(description="単位変換コマンド")
+    parser.add_argument("value", type=float, help="変換したい数値")
+    parser.add_argument("-u", "--unit", required=True, help="cm, g, c")
+    args = parser.parse_args()
+    print(convert(args.value, args.unit))
+    
+
+
+
+
