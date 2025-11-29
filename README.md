@@ -6,12 +6,12 @@
 
 # 使い方
 ダウンロード
-１.最初に"Clone or download"を選択します.
-２.選択したら"Download ZIP"を押します.
-３.URLをコピーしてもらうとダウンロードが完了します.
-４.インストールはgit clone https://github.com/daikiiiiy/robosys2025.git　を打ち込みます.
-５.cd robosys2025を打ち込みます.
-６. 「./kadai 2 4」を打ち込むと実行し「8.0」と返ってきます。また「./kadai -2 4」でやると結果が「-8.0　」となります.
+1.最初に"Clone or download"を選択します.
+2.選択したら"Download ZIP"を押します.
+3.URLをコピーしてもらうとダウンロードが完了します.
+4.インストールはgit clone https://github.com/daikiiiiy/robosys2025.git　を打ち込みます.
+5.cd robosys2025を打ち込みます.
+6.「./kadai 2 4」を打ち込むと実行し「8.0」と返ってきます。また「./kadai -2 4」でやると結果が「-8.0　」となります.
 
 # どんな環境で使えるか
 - Python
