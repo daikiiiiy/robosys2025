@@ -9,14 +9,16 @@ ng () {
 
 res=0
 
-out=$(./ unit 160 -u cm)
-[ "${out}" = "1.6 m" ] || ng "$LINENO"
+out=$(./kadai - 30 15)
+[ "${out}" = "15" ] || ng "$LINENO"
 
-out=$(./ unit 700 -u g)
-[ "${out}" = "0.7 kg" ] || ng "$LINENO"
+out=$(echo a | ./kadai)
+[ "$?" = 1 ]
+[ "${out}" = "" ] || ng "$LINENO"
 
-out=$(./ unit 20 -u c)
-[ "${out}" = "68.0 F" ] || ng "$LINENO"
+out=$(echo | ./kadai)
+[ "$?" = 1 ]
+[ "${out}" = "" ] || ng "$LINENO"
 
-[ "${res}" = 0 ] && echo OK
+[ "$res" = 0 ] && echo OK
 exit $res
