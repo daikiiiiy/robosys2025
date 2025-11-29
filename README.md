@@ -2,19 +2,29 @@
 ![test](https://github.com/daikiiiiy/robosys2025/actions/workflows/test.yml/badge.svg)
 
 # multiplicationコマンド
-このソフトは数字を二つ与えて掛け算をしてくれるコードです。
+このソフトは数字を二つ与えて掛け算をしてくれるコードです.
 
 # 使い方
 ダウンロード
-１.最初に"Clone or download"を選択します
-２.選択したら"Download ZIP"を押します
-３.URLをコピーしてもらうとダウンロードが完了します
-４.
+１.最初に"Clone or download"を選択します.
+２.選択したら"Download ZIP"を押します.
+３.URLをコピーしてもらうとダウンロードが完了します.
+４.インストールはgit clone https://github.com/daikiiiiy/robosys2025.git　を打ち込みます.
+５.cd robosys2025を打ち込みます.
+６. 「./kadai 2 4」を打ち込むと実行し「8.0」と返ってきます。また「./kadai -2 4」でやると結果が「-8.0　」となります.
 
+# どんな環境で使えるか
+- Python
+  -テスト済みバージョン: 3.7~3.10
 
-ロボットシステム学課題１
-このソフトハードウェアは、３条項BSDライセンスの下、再頒布および使用が許可されます
-© 2025 Daiki Okamot
+# テスト環境
+- Ubuntu 24.04 LTS
+# 権利関係・謝辞
+- このソフトハードウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます.
+- このパッケージのコードは、aaa由来のコード（© 2025 Daiki Okamoto)を利用しています.
+- このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著者としたものです. 
+　　-[ryuichueda/slides_marp robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
+© 2025 Daiki Okamoto
 
 
 協力者
