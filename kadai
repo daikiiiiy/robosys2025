@@ -4,29 +4,13 @@
 
 import sys
 
-if len(sys.argv) <3:
-    print("Error")
-    sys.exit(1)
-op = sys.argv[1]
+result= 1.0
 
 try:
-    nums = list(map(float, sys.argv[2:]))
+    for n in sys.argv[1:]:
+        x = float(n)
+        result *= x
 except ValueError:
-    print("valueerror")
-    sys.argv[1]
-
-
-result = nums[0]
-
-for n in nums[1:]:
-    if op == "-": 
-        result -= n
-    elif op in "*": 
-        result *= n
-    elif op == "/":
-        result /= n
-    else:
-        print("Error")
-        sys.exit(1)
-
+    print("Error: 数字で打ってください", file=sys.stderr)
+    sys.exit(1)
 print(result)
