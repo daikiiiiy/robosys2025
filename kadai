@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Daiki Okamoto
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+result= 1.0
+
+try:
+    for n in sys.argv[1:]:
+        x = float(n)
+        result *= x
+except ValueError:
+    print("Error: 数字で打ってください", file=sys.stderr)
+    sys.exit(1)
+print(result)
