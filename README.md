@@ -21,7 +21,7 @@
 - Ubuntu 24.04 LTS
 # 権利関係・謝辞
 - このソフトハードウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます.
-- このパッケージのコードは、aaa由来のコード（© 2025 Ryuichi Ueda)を利用しています.
+- このパッケージのコードは、上田隆一由来のコード（© 2025 Ryuichi Ueda)を利用しています.
 - このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著者としたものです. 
 　　-[ryuichueda/slides_marp robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 © 2025 Ryuich Ueda
